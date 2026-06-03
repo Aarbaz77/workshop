@@ -5,15 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - School Website</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #e3f2fd, #bbdefb);
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #1976d2;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #0d47a1;
+        }
+
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        section {
+            margin-bottom: 2rem;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #1976d2;
+            color: white;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>About Our School</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home is Here</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html"><span class="material-icons">home</span> Home</a></li>
+                <li><a href="about.html"><span class="material-icons">info</span> About</a></li>
+                <li><a href="contact.html"><span class="material-icons">contact_mail</span> Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -21,10 +100,12 @@
         <section>
             <h2>Welcome to Our School</h2>
             <p>Our school is dedicated to providing a high-quality education to all students. We believe in fostering a supportive and inclusive environment where every student can thrive.</p>
+            <img src="images/school-building.jpg" alt="School Building">
         </section>
         <section>
             <h2>Our Mission</h2>
             <p>To empower students to achieve their full potential through innovative teaching and a commitment to excellence.</p>
+            <img src="images/mission.jpg" alt="Our Mission">
         </section>
         <section>
             <h2>Our Values</h2>
@@ -34,6 +115,7 @@
                 <li>Collaboration</li>
                 <li>Excellence</li>
             </ul>
+            <img src="images/values.jpg" alt="Our Values">
         </section>
     </main>
     <footer>
